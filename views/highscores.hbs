@@ -1,0 +1,40 @@
+<div id="rapper">
+	<div id="loginBar">
+		{{#if user}}
+			<div>{{user.username}} Credits: {{user.credits}} Wins: {{user.wins}} Games Played: {{user.games}}</div>
+		{{else}}
+			<form method="GET" action="/login">
+				<input type="submit" value="Go To Login Page">
+			</form>
+		{{/if}}
+	</div>
+	<h1>High Scores</h1>
+	<div class = "rankingRapper" id="percentRap">
+		<div class = "ranking">
+			<ol id="rankPercent"></ol>
+		</div>
+		<div class = "ranking">
+			<ul id="rankPercentCrit"></ul>
+		</div>
+	</div>
+	<div class = "rankingRapper" id="creditRap">
+		<div class = "ranking">
+			<ol id="rankCredits"></ol>
+		</div>
+		<div class = "ranking">
+			<ul id="rankCreditsCrit"></ul>
+		</div>
+	</div>
+	<div class = "rankingRapper" id="winRap">
+		<div class = "ranking">
+			<ol id="rankWins"></ol>
+		</div>
+		<div class = "ranking">
+			<ul id="rankWinsCrit"></ul>
+		</div>
+	</div>
+	<form method="GET" action="/" id="toMain">
+		<input type="submit" value="Return to Main">
+	</form>
+	<script src = "/javascripts/highscores.js"></script>
+</div>

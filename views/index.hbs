@@ -1,0 +1,32 @@
+<div id="rapper">
+	<div id="loginBar">
+		{{#if user}}
+			<div>{{user.username}} Credits: {{user.credits}} Wins: {{user.wins}} Games Played: {{user.games}}</div>
+		{{else}}
+			<form method="GET" action="/login">
+				<input type="submit" value="Go To Login Page">
+			</form>
+		{{/if}}
+	</div>
+	<h1>Pazaak</h1>
+	<div id="mainMenu">
+		<form method="GET" action="/play">
+			<input type="submit" value="Play Game">
+		</form>
+		{{#if user}}
+			<form method="GET" action="/shop">
+				<input type="submit" value="Card Shop">
+			</form>
+		{{else}}
+			<form method="GET" action="/register">
+				<input type="submit" value="Register">
+			</form>
+		{{/if}}
+		<form method="GET" action="/howtoplay">
+			<input type="submit" value="How To Play">
+		</form>
+		<form method="GET" action="/highscores">
+			<input type="submit" value="High Scores">
+		</form>
+	</div>
+</div>

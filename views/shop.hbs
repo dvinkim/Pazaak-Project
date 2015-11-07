@@ -1,0 +1,59 @@
+<div id="rapper">
+	<div id="loginBar">
+		{{#if user}}
+			<div>{{user.username}} Credits: {{user.credits}} Wins: {{user.wins}} Games Played: {{user.games}}</div>
+		{{else}}
+			<form method="GET" action="/login">
+				<input type="submit" value="Go To Login Page">
+			</form>
+		{{/if}}
+	</div>
+	<h1>Shop</h1>
+	{{#if user}}
+		<form method="POST" action="" id="shop">
+			<img src="/images/B1.png">
+			<img src="/images/B2.png">
+			<img src="/images/B3.png">
+			<img src="/images/B4.png">
+			<img src="/images/B5.png">
+			<img src="/images/B6.png">
+			<br />
+			<label id="B1P"></label>
+			<label id="B2P"></label>
+			<label id="B3P"></label>
+			<label id="B4P"></label>
+			<label id="B5P"></label>
+			<label id="B6P"></label>
+			<br />
+			<input class="stock" type="number" min="0" max="0" step="1" value="0" id="B1">
+			<input class="stock" type="number" min="0" max="0" step="1" value="0" id="B2">
+			<input class="stock" type="number" min="0" max="0" step="1" value="0" id="B3">
+			<input class="stock" type="number" min="0" max="0" step="1" value="0" id="B4">
+			<input class="stock" type="number" min="0" max="0" step="1" value="0" id="B5">
+			<input class="stock" type="number" min="0" max="0" step="1" value="0" id="B6">
+			<br />
+			<img src="/images/R1.png">
+			<img src="/images/R2.png">
+			<img src="/images/R3.png">
+			<img src="/images/R4.png">
+			<img src="/images/R5.png">
+			<img src="/images/R6.png">
+			<br />
+			<label id="R1P"></label><input class="stock" type="number" min="0" max="0" step="1" value="0" id="R1">
+			<label id="R2P"></label><input class="stock" type="number" min="0" max="0" step="1" value="0" id="R2">
+			<label id="R3P"></label><input class="stock" type="number" min="0" max="0" step="1" value="0" id="R3">
+			<label id="R4P"></label><input class="stock" type="number" min="0" max="0" step="1" value="0" id="R4">
+			<label id="R5P"></label><input class="stock" type="number" min="0" max="0" step="1" value="0" id="R5">
+			<label id="R6P"></label><input class="stock" type="number" min="0" max="0" step="1" value="0" id="R6">
+			<br />
+			Credits: {{user.credits}}
+			<input type="submit" value="Purchase" id="purchase">
+		</form>
+		<script src = "/javascripts/shop.js"></script>
+	{{else}}
+		<div>You must be logged in to purchase cards!</div>
+	{{/if}}
+	<form method="GET" action="/" id="toMain">
+		<input type="submit" value="Return to Main">
+	</form>
+</div>

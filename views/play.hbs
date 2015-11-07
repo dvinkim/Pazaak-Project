@@ -1,0 +1,26 @@
+<div id="rapper">
+	<div id="loginBar">
+		{{#if user}}
+			<div>{{user.username}} Credits: {{user.credits}} Wins: {{user.wins}} Games Played: {{user.games}}</div>
+		{{else}}
+			<form method="GET" action="/login">
+				<input type="submit" value="Go To Login Page">
+			</form>
+		{{/if}}
+	</div>
+	<canvas id="gameScreen" width="900" height="430">
+	</canvas>
+	<input type="button" value="Use" id="H0">
+	<input type="button" value="Use" id="H1">
+	<input type="button" value="Use" id="H2">
+	<input type="button" value="Use" id="H3">
+	<input type="button" value="End Turn" id="endTurn">
+	<input type="button" value="Stand" id="stand">
+	<input type="button" value="Next Round" id="nextRound">
+	<input type="button" value="New Game" id="newGame">
+	<br/>
+	<form method="GET" action="/" id="toMain">
+		<input type="submit" value="Return to Main">
+	</form>
+		<script src = "/javascripts/kaazapgame.js"></script>
+</div>

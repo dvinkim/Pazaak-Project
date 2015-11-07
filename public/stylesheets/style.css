@@ -1,0 +1,120 @@
+body {
+  padding: 50px;
+	background-color: #000;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 34px;
+}
+
+#rapper {
+	background-color: #ffe680;
+	/*fixed width because game*/
+	width: 900px;
+	height: 500px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#loginBar {
+	width: 900px;
+	position:absolute;
+	top:5em;
+	text-align:right;
+}
+
+#toMain {
+	width: 900px;
+	position:absolute;
+	top:42em;
+	text-align:center;
+}
+
+/* INDEX */
+#mainMenu {
+	text-align:right;
+}
+
+/* PLAY */
+#gameScreen {
+	margin-top:20px;
+}
+#H0 {
+	position:relative;
+	left:56px;
+	bottom: 45px;
+}
+#H1 {
+	position:relative;
+	left:83px;
+	bottom: 45px;
+}
+#H2 {
+	position:relative;
+	left:110px;
+	bottom: 45px;
+}
+#H3 {
+	position:relative;
+	left:137px;
+	bottom: 45px;
+}
+#endTurn {
+	position:relative;
+	left:197px;
+	bottom: 45px;
+}
+#stand {
+	position:relative;
+	left:122px;
+	bottom: 75px;
+}
+#nextRound {
+	position:relative;
+	left:34px;
+	bottom: 105px;
+}
+#newGame {
+	position:relative;
+	right:71px;
+	bottom: 350px;
+}
+
+/* SHOP */
+input.stock {
+	text-align:right;
+	width:3em;
+}
+#shop {
+	text-align:right;
+}
+
+/* HIGH SCORES */
+.rankingRapper {
+	display: inline-block;
+	background-color:#202020;
+	color: #fff;
+}
+#percentRap,#winRap {
+	width: 250px;
+}
+#creditRap {
+	width: 350px;
+	margin-left:18px;
+	margin-right:18px;
+}
+.ranking {
+	display:inline-block;
+	text-align: left;
+}
+
+ul {
+	list-style-type: none;
+}
+
